@@ -1,16 +1,3 @@
-# quotes_app
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src = "https://github.com/user-attachments/assets/13d3394e-4a97-49f2-916c-9686a8bb93fc" width="250">
+<img src = "https://github.com/user-attachments/assets/f3bff71e-24bc-4978-b909-80ead4aa3308" width="250">
+<img src = "https://github.com/user-attachments/assets/21cc6f17-90b0-4f01-9a26-9b71353915e1" width="250">
