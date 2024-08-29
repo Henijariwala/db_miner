@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:quotes_app/screen/home/controller/home_controller.dart';
 
+import '../../../utils/helper/db_helper.dart';
+
 class FavoriteScreen extends StatefulWidget {
   const FavoriteScreen({super.key});
 
@@ -17,24 +19,70 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
     super.initState();
     controller.likeData();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Favorite"),
+        title: Text("Favorite"),
       ),
       body: Column(
         children: [
-          ListView.builder(
-            itemCount: controller.favouriteList.length,
-            itemBuilder: (context, index) {
-              return ListTile(
-                title: Text(
-                  "${controller.favouriteList[index].quotes }",
-                  style: TextStyle(fontSize: 18),
-                ),
-              );
-          },)
+          SizedBox(
+            height: 20,
+          ),
+          Obx(
+            () => Expanded(
+              child: ListView.builder(
+                itemCount: controller.favouriteList.length,
+                itemBuilder: (context, index) {
+                  return Card(
+                    child: ListTile(
+                      title: Text(
+                        "${controller.favouriteList[index].quotes}",
+                        style: TextStyle(fontSize: 18, fontFamily: "f6"),
+                      ),
+                      subtitle: Text(
+                        "- ${controller.favouriteList[index].author}",
+                        style: TextStyle(fontSize: 18, fontFamily: "f6"),
+                      ),
+                      trailing: IconButton(
+                        onPressed: () {
+                          Get.defaultDialog(
+                            title: "are you sure?",
+                            actions: [
+                              ElevatedButton(
+                                onPressed: () {
+                                  DBHelper.helper.deleteQuery(
+                                      controller.favouriteList[index].id!);
+                                  controller.likeData();
+                                  Get.back();
+                                },
+                                child: const Text(
+                                  "Yes",
+                                  style: TextStyle(color: Colors.green),
+                                ),
+                              ),
+                              ElevatedButton(
+                                onPressed: () {
+                                  Get.back();
+                                },
+                                child: const Text(
+                                  "No",
+                                  style: TextStyle(color: Colors.red),
+                                ),
+                              ),
+                            ],
+                          );
+                        },
+                        icon: Icon(Icons.delete),
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ),
+          ),
         ],
       ),
     );

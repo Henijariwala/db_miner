@@ -1,8 +1,8 @@
 import 'dart:io';
+
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:quotes_app/screen/home/model/db_model.dart';
-import 'package:quotes_app/screen/home/model/home_model.dart';
 import 'package:sqflite/sqflite.dart';
 
 import '../../screen/home/model/category_model.dart';
@@ -31,7 +31,8 @@ class DBHelper {
       onCreate: (db, version) {
         String quotesQuery =
             "CREATE TABLE quotes (id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT,author TEXT,quotes TEXT)";
-        String categoryQuery="CREATE TABLE category (id INTEGER PRIMARY KEY AUTOINCREMENT,category TEXT)";
+        String categoryQuery =
+            "CREATE TABLE category (id INTEGER PRIMARY KEY AUTOINCREMENT,category TEXT)";
         db.execute(quotesQuery);
         db.execute(categoryQuery);
       },
@@ -50,24 +51,35 @@ class DBHelper {
     );
   }
 
-  Future<List<HomeModel>>? readQuery() async {
-    database= await checkDb();
-    String quotes= "SELECT * FROM quotes";
-    List<Map>list=await database!.rawQuery(quotes);
-    List<HomeModel> l1=list.map((e) => HomeModel.mapToModel(e)).toList();
+  Future<List<dbModel>>? readQuery() async {
+    database = await checkDb();
+    String quotes = "SELECT * FROM quotes";
+    List<Map> list = await database!.rawQuery(quotes);
+    List<dbModel> l1 = list.map((e) => dbModel.mapToModel(e)).toList();
     return l1;
+  }
+
+  Future<void> deleteQuery(int id) async {
+    database = await checkDb();
+    database!.delete("quotes", where: "id=?", whereArgs: [id]);
   }
 
   Future<void> insertCategory(categoryModel model) async {
     database = await checkDb();
-    database!.insert("category", {"category":model.name,},);
+    database!.insert(
+      "category",
+      {
+        "category": model.name,
+      },
+    );
   }
 
   Future<List<categoryModel>>? readCategory() async {
-    database= await checkDb();
-    String category= "SELECT * FROM category";
-    List<Map>list=await database!.rawQuery(category);
-    List<categoryModel> l2=list.map((e) => categoryModel.mapToModel(e)).toList();
+    database = await checkDb();
+    String category = "SELECT * FROM category";
+    List<Map> list = await database!.rawQuery(category);
+    List<categoryModel> l2 =
+        list.map((e) => categoryModel.mapToModel(e)).toList();
     return l2;
   }
 }

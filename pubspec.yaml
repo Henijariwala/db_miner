@@ -73,6 +73,7 @@ flutter:
   assets:
       - assets/json/
       - assets/image/
+      - assets/font/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -96,6 +97,27 @@ flutter:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
-  #
+  fonts:
+   - family: DancingScript
+     fonts:
+      - asset: assets/font/DancingScript.ttf
+        style: italic
+   - family: IndieFlower
+     fonts:
+      - asset: assets/font/IndieFlower.ttf
+        style: italic
+   - family: Nerko
+     fonts:
+       - asset: assets/font/Nerko.ttf
+         style: italic
+   - family: NewRegular
+     fonts:
+       - asset: assets/font/NewRegular.ttf
+         style: italic
+   - family: Roboto-black
+     fonts:
+       - asset: assets/font/Roboto-black.ttf
+         style: italic
+
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
