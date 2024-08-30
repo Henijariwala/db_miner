@@ -63,7 +63,7 @@ class _EditScreenState extends State<EditScreen> {
                     alignment: Alignment.topCenter,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: NetworkImage("${controller.onImg.value}"),
+                            image: AssetImage("${controller.onImg.value}"),
                             fit: BoxFit.cover)),
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
@@ -84,7 +84,7 @@ class _EditScreenState extends State<EditScreen> {
                             () => Align(
                               alignment: Alignment.bottomRight,
                               child: Text(
-                                "${l1[0]}",
+                                "~${l1[0]}",
                                 style: TextStyle(
                                     color: controller.onColor.value,
                                     fontSize: 20,
@@ -137,6 +137,7 @@ class _EditScreenState extends State<EditScreen> {
           const SizedBox(
             height: 20,
           ),
+          //color
           Obx(
             () => Visibility(
               visible: controller.isOn.value,
@@ -166,6 +167,7 @@ class _EditScreenState extends State<EditScreen> {
               ),
             ),
           ),
+          //font
           Obx(
             () => Visibility(
               visible: controller.FontOn.value,
@@ -191,6 +193,7 @@ class _EditScreenState extends State<EditScreen> {
               ),
             ),
           ),
+          //image
           Obx(
             () => Visibility(
               visible: controller.imgOn.value,
@@ -202,13 +205,13 @@ class _EditScreenState extends State<EditScreen> {
                   itemBuilder: (context, index) {
                     return InkWell(
                       onTap: () {
-                        controller.imgOn.value = controller.imgList[index];
+                        controller.onImg.value = controller.imgList[index];
                       },
                       child: Container(
                           height: 40,
                           margin: const EdgeInsets.all(10),
                           width: 40,
-                          child: Image.network(controller.imgList[index])),
+                          child: Image.asset(controller.imgList[index])),
                     );
                   },
                 ),
@@ -240,7 +243,7 @@ class _EditScreenState extends State<EditScreen> {
       //IOS
       Directory? dir = await getDownloadsDirectory();
 
-      await File("${dir!.path}/.png");
+      File("${dir!.path}/.png");
       return "${dir!.path}/.png";
     }
   }

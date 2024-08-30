@@ -2,23 +2,16 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 class ShareHelper{
 
-  Future<void> setNameList(List<String> name) async {
+  static ShareHelper shareHelper = ShareHelper._();
+  ShareHelper._();
+
+  Future<void> setTheme(bool isTheme) async {
     SharedPreferences shr = await SharedPreferences.getInstance();
-    await shr.setStringList('name', name);
-  }
-  Future<void> setQuotesList(List<String> quotes) async {
-    SharedPreferences shr = await SharedPreferences.getInstance();
-    await shr.setStringList('quotes', quotes);
+    shr.setBool('theme', isTheme);
   }
 
-  Future<List<String>> getNameList() async {
-    SharedPreferences shr= await SharedPreferences.getInstance();
-    List<String>name= shr.getStringList("name")??[];
-    return name;
-  }
-  Future<List<String>> getQuotesList() async {
-    SharedPreferences shr= await SharedPreferences.getInstance();
-    List<String>quotes= shr.getStringList("quotes")??[];
-    return quotes;
+  Future<bool?> getTheme() async {
+    SharedPreferences shr = await SharedPreferences.getInstance();
+    return shr.getBool("theme");
   }
 }

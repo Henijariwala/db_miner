@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:quotes_app/screen/home/controller/home_controller.dart';
 
+import '../../../utils/helper/share_helper.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -37,7 +39,17 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ];
             },
-          )
+          ),
+          Obx(
+                () => Switch(
+              value: controller.isLight.value,
+              onChanged: (value) {
+                ShareHelper shr = ShareHelper.shareHelper;
+                shr.setTheme(value);
+                controller.changeTheme();
+              },
+            ),
+          ),
         ],
       ),
       body: Stack(

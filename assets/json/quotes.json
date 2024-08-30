@@ -2,18 +2,13 @@
   {
     "id": 1,
     "name": "Love",
-    "images": "assets/image/r1.png",
+    "images": "assets/image/quotes_bg1.jpg",
     "image": [
-      "assets/image/p2.png",
-      "assets/image/p3.png",
-      "assets/image/p4.png",
-      "assets/image/p5.png",
-      "assets/image/p6.png",
-      "assets/image/p7.png",
-      "assets/image/p8.png",
-      "assets/image/p9.png",
-      "assets/image/p10.png",
-      "assets/image/p11.png"
+      "assets/image/quotes_bg2.png",
+      "assets/image/quotes_bg3.jpg",
+      "assets/image/quotes_bg4.webd",
+      "assets/image/quotes_bg5.jpg",
+      "assets/image/quotes_bg6.jpg"
     ],
     "quotes": [
       "“I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle.”",
@@ -43,18 +38,13 @@
   {
     "id": 2,
     "name": "Motivational",
-    "images": "assets/image/r1.png",
+    "images": "assets/image/quotes_bg1.jpg",
     "image": [
-      "assets/image/p2.png",
-      "assets/image/p3.png",
-      "assets/image/p4.png",
-      "assets/image/p5.png",
-      "assets/image/p6.png",
-      "assets/image/p7.png",
-      "assets/image/p8.png",
-      "assets/image/p9.png",
-      "assets/image/p10.png",
-      "assets/image/p11.png"
+      "assets/image/quotes_bg2.png",
+      "assets/image/quotes_bg3.jpg",
+      "assets/image/quotes_bg4.webd",
+      "assets/image/quotes_bg5.jpg",
+      "assets/image/quotes_bg6.jpg"
     ],
     "quotes": [
       "“I must not fear. Fear is the mind-killer. Fear is the little-death that brings total obliteration. ”",
@@ -84,18 +74,13 @@
   {
     "id": 3,
     "name": "Art",
-    "images": "assets/image/r1.png",
+    "images": "assets/image/quotes_bg1.jpg",
     "image": [
-      "assets/image/p2.png",
-      "assets/image/p3.png",
-      "assets/image/p4.png",
-      "assets/image/p5.png",
-      "assets/image/p6.png",
-      "assets/image/p7.png",
-      "assets/image/p8.png",
-      "assets/image/p9.png",
-      "assets/image/p10.png",
-      "assets/image/p11.png"
+      "assets/image/quotes_bg2.png",
+      "assets/image/quotes_bg3.jpg",
+      "assets/image/quotes_bg4.webd",
+      "assets/image/quotes_bg5.jpg",
+      "assets/image/quotes_bg6.jpg"
     ],
     "quotes": [
       "“Everything you can imagine is real.”",
@@ -125,18 +110,13 @@
   {
     "id": 4,
     "name": "Success",
-    "images": "assets/image/r1.png",
+    "images": "assets/image/quotes_bg1.jpg",
     "image": [
-      "assets/image/p2.png",
-      "assets/image/p3.png",
-      "assets/image/p4.png",
-      "assets/image/p5.png",
-      "assets/image/p6.png",
-      "assets/image/p7.png",
-      "assets/image/p8.png",
-      "assets/image/p9.png",
-      "assets/image/p10.png",
-      "assets/image/p11.png"
+      "assets/image/quotes_bg2.png",
+      "assets/image/quotes_bg3.jpg",
+      "assets/image/quotes_bg4.webd",
+      "assets/image/quotes_bg5.jpg",
+      "assets/image/quotes_bg6.jpg"
     ],
     "quotes": [
       "“Success is not final, failure is not fatal: it is the courage to continue that counts.”",
@@ -166,18 +146,13 @@
   {
     "id": 5,
     "name": "God",
-    "images": "assets/image/r1.png",
+    "images": "assets/image/quotes_bg1.jpg",
     "image": [
-      "assets/image/p2.png",
-      "assets/image/p3.png",
-      "assets/image/p4.png",
-      "assets/image/p5.png",
-      "assets/image/p6.png",
-      "assets/image/p7.png",
-      "assets/image/p8.png",
-      "assets/image/p9.png",
-      "assets/image/p10.png",
-      "assets/image/p11.png"
+      "assets/image/quotes_bg2.png",
+      "assets/image/quotes_bg3.jpg",
+      "assets/image/quotes_bg4.webd",
+      "assets/image/quotes_bg5.jpg",
+      "assets/image/quotes_bg6.jpg"
     ],
     "quotes":[
       "“If we find ourselves with a desire that nothing in this world can satisfy, the most probable explanation is that we were made for another world.”",
@@ -207,18 +182,13 @@
   {
     "id": 6,
     "name": "Truth",
-    "images": "assets/image/r1.png",
+    "images": "assets/image/quotes_bg1.jpg",
     "image": [
-      "assets/image/p2.png",
-      "assets/image/p3.png",
-      "assets/image/p4.png",
-      "assets/image/p5.png",
-      "assets/image/p6.png",
-      "assets/image/p7.png",
-      "assets/image/p8.png",
-      "assets/image/p9.png",
-      "assets/image/p10.png",
-      "assets/image/p11.png"
+      "assets/image/quotes_bg2.png",
+      "assets/image/quotes_bg3.jpg",
+      "assets/image/quotes_bg4.webd",
+      "assets/image/quotes_bg5.jpg",
+      "assets/image/quotes_bg6.jpg"
     ],
     "quotes":[
       "“I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle.”",
@@ -248,18 +218,13 @@
   {
     "id": 7,
     "name": "Romance",
-    "images": "assets/image/r1.png",
+    "images": "assets/image/quotes_bg1.jpg",
     "image": [
-      "assets/image/p2.png",
-      "assets/image/p3.png",
-      "assets/image/p4.png",
-      "assets/image/p5.png",
-      "assets/image/p6.png",
-      "assets/image/p7.png",
-      "assets/image/p8.png",
-      "assets/image/p9.png",
-      "assets/image/p10.png",
-      "assets/image/p11.png"
+      "assets/image/quotes_bg2.png",
+      "assets/image/quotes_bg3.jpg",
+      "assets/image/quotes_bg4.webd",
+      "assets/image/quotes_bg5.jpg",
+      "assets/image/quotes_bg6.jpg"
     ],
     "quotes":[
       "“There is no pretending,\" Jace said with absolute clarity. \"I love you, and I will love you until I die, and if there is life after that, I'll love you then.”",
@@ -289,18 +254,13 @@
   {
     "id": 8,
     "name": "Life",
-    "images": "assets/image/r1.png",
+    "images": "assets/image/quotes_bg1.jpg",
     "image": [
-      "assets/image/p2.png",
-      "assets/image/p3.png",
-      "assets/image/p4.png",
-      "assets/image/p5.png",
-      "assets/image/p6.png",
-      "assets/image/p7.png",
-      "assets/image/p8.png",
-      "assets/image/p9.png",
-      "assets/image/p10.png",
-      "assets/image/p11.png"
+      "assets/image/quotes_bg2.png",
+      "assets/image/quotes_bg3.jpg",
+      "assets/image/quotes_bg4.webd",
+      "assets/image/quotes_bg5.jpg",
+      "assets/image/quotes_bg6.jpg"
     ],
     "quotes":[
       "“I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst.”",
@@ -330,18 +290,13 @@
   {
     "id": 9,
     "name": "Car",
-    "images": "assets/image/r1.png",
+    "images": "assets/image/quotes_bg1.jpg",
     "image": [
-      "assets/image/p2.png",
-      "assets/image/p3.png",
-      "assets/image/p4.png",
-      "assets/image/p5.png",
-      "assets/image/p6.png",
-      "assets/image/p7.png",
-      "assets/image/p8.png",
-      "assets/image/p9.png",
-      "assets/image/p10.png",
-      "assets/image/p11.png"
+      "assets/image/quotes_bg2.png",
+      "assets/image/quotes_bg3.jpg",
+      "assets/image/quotes_bg4.webd",
+      "assets/image/quotes_bg5.jpg",
+      "assets/image/quotes_bg6.jpg"
     ],
     "quotes":[
       "I spent a lot of money on booze, birds and fast cars. The rest I just squandered.",
@@ -371,18 +326,13 @@
   {
     "id": 10,
     "name": "Dad",
-    "images": "assets/image/r1.png",
+    "images": "assets/image/quotes_bg1.jpg",
     "image": [
-      "assets/image/p2.png",
-      "assets/image/p3.png",
-      "assets/image/p4.png",
-      "assets/image/p5.png",
-      "assets/image/p6.png",
-      "assets/image/p7.png",
-      "assets/image/p8.png",
-      "assets/image/p9.png",
-      "assets/image/p10.png",
-      "assets/image/p11.png"
+      "assets/image/quotes_bg2.png",
+      "assets/image/quotes_bg3.jpg",
+      "assets/image/quotes_bg4.webd",
+      "assets/image/quotes_bg5.jpg",
+      "assets/image/quotes_bg6.jpg"
     ],
     "quotes":[
       "When one has not had a good father, one must create one.",

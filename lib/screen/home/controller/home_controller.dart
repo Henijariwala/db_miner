@@ -5,6 +5,7 @@ import 'package:quotes_app/screen/home/model/db_model.dart';
 
 import '../../../utils/helper/db_helper.dart';
 import '../../../utils/helper/json_helper.dart';
+import '../../../utils/helper/share_helper.dart';
 import '../model/category_model.dart';
 import '../model/home_model.dart';
 
@@ -17,6 +18,7 @@ class HomeController extends GetxController {
   RxBool FontOn = false.obs;
   RxBool imgOn = false.obs;
   RxBool color = false.obs;
+  RxBool isLight = false.obs;
   RxString onFont = "DancingScript".obs;
   RxList fontList = [
     "DancingScript",
@@ -25,14 +27,14 @@ class HomeController extends GetxController {
     "NewRegular",
     "Roboto-black"
   ].obs;
-  RxString onImg = "https://m.media-amazon.com/images/I/61wJHL09dRL.png".obs;
+  RxString onImg = "assets/image/quotes_bg2.png".obs;
   RxList imgList = [
-    "https://static.vecteezy.com/system/resources/previews/027/231/654/non_2x/illustration-graphic-of-aesthetic-background-template-with-simple-and-minimalist-pastel-colors-vector.jpg",
-    "https://m.media-amazon.com/images/I/61wJHL09dRL.png",
-    "https://wallpapers.com/images/featured/light-blue-aesthetic-iphone-3n1hpntmp37i4wrz.jpg",
-    "https://cdn.pixabay.com/photo/2022/03/29/18/23/pattern-7099923_640.png",
-    "https://static.vecteezy.com/system/resources/thumbnails/007/251/566/small/4k-hd-wallpaper-for-computer-desktop-with-dark-aesthetic-and-dope-trippy-wallpapers-for-cute-girls-photo.jpg",
-    "https://i.pinimg.com/736x/b6/ef/d0/b6efd0f9cc502bc6e3d2aa538baef422.jpg"
+    "assets/image/quotes_bg1.jpg",
+    "assets/image/quotes_bg2.png",
+    "assets/image/quotes_bg3.jpg",
+    "assets/image/quotes_bg4.webp",
+    "assets/image/quotes_bg5.jpg",
+    "assets/image/quotes_bg6.jpg"
   ].obs;
 
   void copy(String quotes) {
@@ -52,5 +54,11 @@ class HomeController extends GetxController {
   Future<void> likeData() async {
     List<dbModel>? l1 = await DBHelper.helper.readQuery();
     favouriteList.value = l1!;
+  }
+
+  void changeTheme() async {
+    ShareHelper shr = ShareHelper.shareHelper;
+    bool? isTheme = await shr.getTheme();
+    isLight.value = isTheme ?? false;
   }
 }

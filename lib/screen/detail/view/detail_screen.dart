@@ -31,10 +31,9 @@ class _DetailScreenState extends State<DetailScreen> {
       body: Container(
     height: MediaQuery.sizeOf(context).height,
     width: MediaQuery.sizeOf(context).width,
-    decoration: const BoxDecoration(
+    decoration:  BoxDecoration(
     image: DecorationImage(
-    image: AssetImage("assets/image/detail_src.avif"),fit: BoxFit.cover
-    )
+    image: AssetImage("assets/image/detail_src.avif"),fit: BoxFit.cover,)
     ),
     child: ListView.builder(
       itemCount: model.authorList!.length,
@@ -73,7 +72,9 @@ class _DetailScreenState extends State<DetailScreen> {
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Text("${model.quotesList![index]}",
-                              style: const TextStyle(fontSize: 20,overflow: TextOverflow.ellipsis,fontWeight: FontWeight.bold),),
+                              style: const TextStyle(fontSize: 20,
+                                  overflow: TextOverflow.ellipsis,
+                                  fontWeight: FontWeight.bold,color: Colors.black),),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
@@ -81,7 +82,8 @@ class _DetailScreenState extends State<DetailScreen> {
                             alignment: Alignment.bottomRight,
                               child: Text("~${model.authorList![index]}",style: const TextStyle(
                               fontSize: 20,
-                              fontWeight: FontWeight.bold
+                              fontWeight: FontWeight.bold,
+                                color: Colors.black
                             ),),
                             ),
                           )
